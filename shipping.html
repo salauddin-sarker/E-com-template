@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Com-eCommerce Bootstrap 5 Template</title>
+    <link rel="shortcut icon" href="./images/favicon/icon.png" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <!-- ==========header-area========== -->
+       <header>
+        <div class="header-bottom">
+            <div class="container-fluid">
+                <div class="row d-flex align-items-center">
+                    <div class="col-xl-3 col-lg-2 col-md-2 d-flex col-sm-6">
+                        <div class="header-logo">
+                            <a href="index.html">
+                                <span>E</span>-Com
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 d-sm-none d-md-block">
+                        <nav class="main-nav position-relative">
+                            <ul class="main-menu d-flex justify-content-around align-items-center">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="#">Shop <i class="fa-solid fa-chevron-down"></i></a>
+                                    <ul class="drop-menu">
+                                        <li>
+                                            <a href="shop.html">Shop Defualt</a>
+                                        </li>
+                                        <li>
+                                            <a href="shop-list.html">Shop-List</a>
+                                        </li>
+                                        <li>
+                                            <a href="shop-grid.html">Shop-Grid</a>
+                                        </li>
+                                        <li>
+                                            <a href="shop-right-sidebar.html">Shop-Right-Sidebar</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#blog">Blog</a></li>
+                                    <li class="drop-holder">
+                                        <a href="#">Category<i class="fa-solid fa-chevron-down"></i></a>
+                                        <ul class="drop-menu">
+                                            <li>
+                                                <a href="product-details.html">Product-Details</a>
+                                            </li>
+                                            <li>
+                                                <a href="blog-details.html">Blog-Details</a>
+                                            </li>
+                                            <li>
+                                                <a href="cart.html">Shopping Cart</a>
+                                            </li>
+                                            <li>
+                                                <a href="shipping.html">Shipping</a>
+                                            </li>
+                                            <li>
+                                                <a href="wishlist.html">Wishlist</a>
+                                            </li>
+                                            <li>
+                                                <a href="product-review.html">Product-Review</a>
+                                            </li>
+                                            <li>
+                                                <a href="login-register.html">Login-Register</a>
+                                            </li>
+                                            <li>
+                                                <a href="payment.html">Payment</a>
+                                            </li>
+                                            <li>
+                                                <a href="faq.html">Faq</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 cart-short">
+                        <div class="cart-wishlist">
+                            <ul class="d-flex justify-content-end">
+                                <li class="position-relative me-2">
+                                    <a href="wishlist.html">
+                                        <i class="fa-solid fa-heart"></i>
+                                    <span class="position-absolute top-0 start-10 translate-middle sopping-cart badge rounded-pill bg-danger">
+                                      2
+                                    </span>
+                                    Wishlist
+                                    </a>
+                                </li>
+                                <li class="position-relative ms-2">
+                                    <div class="" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-cart-shopping"></i>
+                                        <span class="position-absolute top-0  translate-middle sopping-cart badge rounded-pill bg-danger">
+                                            0
+                                          </span>
+                                          Add to Cart
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="offcanvas offcanvas-end bg-white" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                  <h5 id="offcanvasRightLabel">YOUR CART</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <p>There are no more items in your cart</p>
+                </div>
+            </div>
+            <div class="offcanvas">
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling"
+                aria-labelledby="offcanvasScrollingLabel">
+                    <div class="offcanvas-header">
+                        <a class="offcanvas-title" id="offcanvasScrollingLabel" href="index.html">
+                            E-Com
+                        </a>
+                        <button type="button" class="btn-close text-reset close-btn" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="mobile-menu">
+                            <div class="wrapper">
+                                <nav class="short-screen">
+                                    <div>
+                                        <ul class="sidebar-nav">
+                                            <li class="sidebar-item active">
+                                                <a class="sidebar-link" href="index.html">Home
+                                                </a>
+                                            </li>
+                                            <li class="sidebar-item has-submenu">
+                                                <a class="sidebar-link d-inline">Shop<i class="fas fa-angle-down text-white mt-1"></i></a>
+                                               <ul>
+                                                    <li><a href="index.html">Dropdown 1</a></li>
+                                                    <li><a href="index.html">Dropdown 2</a></li>
+                                                    <li><a href="index.html">Dropdown 3</a></li>
+                                                    <li><a href="index.html">Dropdown 4</a></li>
+                                               </ul>
+                                            </li>
+                        
+                                            <li class="sidebar-item">
+                                                <a class="sidebar-link" href="#">Blog</a>
+                                            </li>
+                        
+                                            <li class="sidebar-item has-submenu">
+                                                <a class="sidebar-link d-inline">CATAGORY<i class="fas fa-angle-down text-white mt-1"></i></a>
+                                               <ul>
+                                                    <li><a href="index.html">Dropdown 1</a></li>
+                                                    <li><a href="index.html">Dropdown 2</a></li>
+                                                    <li><a href="index.html">Dropdown 3</a></li>
+                                                    <li><a href="index.html">Dropdown 4</a></li>
+                                                    <li><a href="index.html">Dropdown 5</a></li>
+                                                    <li><a href="index.html">Dropdown 6</a></li>
+                                                    <li><a href="index.html">Dropdown 8</a></li>
+                                                    <li><a href="index.html">Dropdown 9</a></li>
+                                                    <li><a href="index.html">Dropdown 10</a></li>
+                                               </ul>
+                                            </li>
+                                            <li class="sidebar-item">
+                                                <a class="sidebar-link" href="#">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModal" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content modal-bg-dark">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                 data-tippy-inertia="true" data-tippy-animation="shift-away"
+                                data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder">
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-search">
+                                <h1 class="searchbox-info">Search Your Product</h1>
+                                <form action="#" class="hm-searchbox bg-dark">
+                                    <input type="text" name="Search ..." value="Search here..."
+                                        onblur="if(this.value==''){this.value='Search...'}"
+                                        onfocus="if(this.value=='Search here...'){this.value=''}" autocomplete="off">
+                                    <button class="search-btn" type="submit" aria-label="searchbtn">
+                                        <i class="pe-7s-search"></i>
+                                    </button>
+                                </form>
+                                <div class="modal-btn d-flex">
+                                    <a href="#">No Thanks</a>
+                                    <a href="#">Enter</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </header>
+       <!-- ==========breadcumb-area========== -->
+        <section>
+            <div class="breadcrumb-area breadcrumb-height">
+                <div class="container h-100">
+                    <div class="row h-100">
+                        <div class="col-lg-12">
+                            <div class="breadcrumb-item">
+                                <h2 class="breadcrumb-heading">shipping Page</h2>
+                                <ul>
+                                    <li>
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li><i class="fa fa-angle-right"></i></li>
+                                    <li>shipping</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <!-- ==========shipping-area========== -->
+        <section>
+            <div class="shiping-wrapper py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <form action="#">
+                                <div class="shipping-form m-auto">
+                                    <h4 class="shipping-title">Billing details</h4>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <label>First Name</label>
+                                            <input type="text" placeholder="your name">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <label>Last Name</label>
+                                            <input type="text" placeholder="your name">
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <label>Company Name (Optional)</label>
+                                            <input type="text" placeholder="company name">
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <label>Apartment, suite, unit etc.(Optional)</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <label>Street Address</label>
+                                            <input type="text" placeholder="street address">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <label>Postcode / ZIP</label>
+                                            <input type="password" placeholder="zipcode">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <label>Select Country</label>
+                                            <select name="country" class="shipping-country">
+                                                <option value="morrocow">morrocow</option>
+                                                <option value="pakistan">poland</option>
+                                                <option value="filipine">filipine</option>
+                                                <option value="Island">Island</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <label>Email Address</label>
+                                            <input type="email" placeholder="email">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <label>phone-Number</label>
+                                            <input type="number" placeholder="phone">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="shipping-form-list create-acc">
+                                                <input id="cbox" type="checkbox">
+                                                <label for="cbox"><span>Create an account?</span></label>
+                                            </div>
+                                            <div id="cbox-info" class="shipping-form-list create-account">
+                                                <p>Create an account by entering the information below. If you are a returning
+                                                    customer please login at the top of the page.</p>
+                                                <label>Account password </label>
+                                                <input placeholder="password" type="password">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h4 class="shipping-title">Shipping Details </h4>
+                                    <div class="order-notes">
+                                        <label>Order Notes(Optional)</label>
+                                              <input type="text" name="name" id="massage">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="shipping-right-wrap bg-white">
+                                <div class="shipping-title">
+                                    <h3>Your Order</h3>
+                                </div>
+                                <table class="shipping-total">
+                                    <thead class="shipping-total-header">
+                                            <tr>
+                                                <th>Product</th>
+                                                <th>Total</th>
+                                            </tr>
+                                    </thead>
+                                    <tbody class="shipping-total-product">
+                                        <tr>
+                                            <td>Lorem ipsum dolor sit consulate adipisicing elit.</td>
+                                            <td>$7844.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lorem ipsum dolor sit consulate adipisicing elit.</td>
+                                            <td>$23844.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lorem ipsum dolor sit consulate adipisicing elit.</td>
+                                            <td>$10844.00</td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody class="shipping-sub-total">
+                                        <tr>
+                                            <th>Subtotal</th>
+                                            <td>$5877.00</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Shipping</th>
+                                            <td>$257.00</td>
+                                        </tr>
+                                        <tr>
+                                           <th>Total</th>
+                                           <th>$103004.00</th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="account-check-box p-2">
+                                    <div class="shipping-form-list create-acc">
+                                        <input id="cbo" type="checkbox">
+                                        <label for="cbo"><span>Check Payments</span></label>
+                                    </div>
+                                    <div class="shipping-form-list create-acc">
+                                        <input id="cox" type="checkbox">
+                                        <label for="cox"><span>Cash On Delivery</span></label>
+                                    </div>
+                                    <div class="shipping-form-list create-acc">
+                                        <input id="box" type="checkbox">
+                                        <label for="box"><span>PayPal</span></label>
+                                    </div>
+                                    <div class="shipping-title">
+                                        <h4>Direct Bank Transfer</h4>
+                                    </div>
+                                    <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.</p>
+                                </div>
+                                <div class="order-button-payment">
+                                    <a href="payment.html">
+                                        <input value="Place order" type="submit">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       <!-- ==========footer-area========== -->
+       <footer>
+        <div class="footer-area  bg-dark">
+            <div class="footer-top py-5">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                            <div class="footer-widget-item">
+                                <div class="footer-widget-logo">
+                                    <a class="header-logo" href="index.html">
+                                        E-Com
+                                    </a>
+                                </div>
+                                <div class="with-border">
+                                    <ul>
+                                        <li>
+                                            <a href="#" data-tippy="location" data-tippy-inertia="true"
+                                                data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                data-tippy-arrow="true" data-tippy-theme="sharpborder">
+                                                <i class="fa fa-map-marker"></i>
+                                                <span>184 Main Rd E, Australia</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-tippy="envelope" data-tippy-inertia="true"
+                                                data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                data-tippy-arrow="true" data-tippy-theme="sharpborder">
+                                                <i class="fa fa-envelope-open"></i>
+                                                <span>contact@company.com</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-tippy="Contact" data-tippy-inertia="true"
+                                                data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                data-tippy-arrow="true" data-tippy-theme="sharpborder">
+                                                <i class="fa fa-phone"></i>
+                                                <span> +00 123 456 789</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-tippy="twitter" data-tippy-inertia="true"
+                                                data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                data-tippy-arrow="true" data-tippy-theme="sharpborder">
+                                                <i class="fa-brands fa-twitter"></i>
+                                                <span>E-Com@twitter</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-tippy="instagram" data-tippy-inertia="true"
+                                                data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                data-tippy-arrow="true" data-tippy-theme="sharpborder">
+                                                <i class="fa-brands fa-instagram"></i>
+                                                <span>contact.instagram</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="payment-method">
+                                <a href="#">
+                                    <img src="./images/payment/1.png" alt="Payment Method">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                            <div class="footer-widget-item">
+                                <h3 class="footer-widget-title">Quick links</h3>
+                                <ul class="footer-widget-list-item">
+                                    <li>
+                                        <a href="index.html">Home E-Com</a>
+                                    </li>
+                                    <li>
+                                        <a href="shop.html">shop default</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">FAQ</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Contact</a>
+                                    </li>
+                                    <li>
+                                        <a href="product-details.html">Product Details</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                            <div class="footer-widget-item">
+                                <h3 class="footer-widget-title">Useful links</h3>
+                                <ul class="footer-widget-list-item">
+                                    <li>
+                                        <a href="login-register.html">Sign In</a>
+                                    </li>
+                                    <li>
+                                        <a href="product-review.html">Review</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">My Account</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Contact</a>
+                                    </li>
+                                    <li>
+                                        <a href="payment.html">Payment</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="footer-widget-item">
+                                <h3 class="footer-widget-title">Infomation</h3>
+                                <ul class="footer-widget-list-item">
+                                    <li>
+                                        <a href="shipping.html">Shipping & Delivery</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Privacy Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="shipping.html">Returns</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Returns & Exchanges</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Helps</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <p class="bottom-copyright">@ 2022, <a href="#">E-Com.</a> all right reserved</p>
+                        </div>
+                        <div class="col-lg-6 text-end col-md-6 col-sm-12">
+                            <div class="social-footer-bottom-link">
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </footer>
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/slick.min.js"></script> 
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- <script src="./js/bootstrap.bundle.min.js"></script> -->
+    <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Com-eCommerce Bootstrap 5 Template</title>
+    <link rel="shortcut icon" href="./images/favicon/icon.png" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <!-- ==========header-area========== -->
+       <header>
+        <div class="header-bottom">
+            <div class="container-fluid">
+                <div class="row d-flex align-items-center">
+                    <div class="col-xl-3 col-lg-2 col-md-2 d-flex col-sm-6">
+                        <div class="header-logo">
+                            <a href="index.html">
+                                <span>E</span>-Com
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 d-sm-none d-md-block">
+                        <nav class="main-nav position-relative">
+                            <ul class="main-menu d-flex justify-content-around align-items-center">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="#">Shop <i class="fa-solid fa-chevron-down"></i></a>
+                                    <ul class="drop-menu">
+                                        <li>
+                                            <a href="shop.html">Shop Defualt</a>
+                                        </li>
+                                        <li>
+                                            <a href="shop-list.html">Shop-List</a>
+                                        </li>
+                                        <li>
+                                            <a href="shop-grid.html">Shop-Grid</a>
+                                        </li>
+                                        <li>
+                                            <a href="shop-right-sidebar.html">Shop-Right-Sidebar</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#blog">Blog</a></li>
+                                    <li class="drop-holder">
+                                        <a href="#">Category<i class="fa-solid fa-chevron-down"></i></a>
+                                        <ul class="drop-menu">
+                                            <li>
+                                                <a href="product-details.html">Product-Details</a>
+                                            </li>
+                                            <li>
+                                                <a href="blog-details.html">Blog-Details</a>
+                                            </li>
+                                            <li>
+                                                <a href="cart.html">Shopping Cart</a>
+                                            </li>
+                                            <li>
+                                                <a href="shipping.html">Shipping</a>
+                                            </li>
+                                            <li>
+                                                <a href="wishlist.html">Wishlist</a>
+                                            </li>
+                                            <li>
+                                                <a href="product-review.html">Product-Review</a>
+                                            </li>
+                                            <li>
+                                                <a href="login-register.html">Login-Register</a>
+                                            </li>
+                                            <li>
+                                                <a href="payment.html">Payment</a>
+                                            </li>
+                                            <li>
+                                                <a href="faq.html">Faq</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 cart-short">
+                        <div class="cart-wishlist">
+                            <ul class="d-flex justify-content-end">
+                                <li class="position-relative me-2">
+                                    <a href="wishlist.html">
+                                        <i class="fa-solid fa-heart"></i>
+                                    <span class="position-absolute top-0 start-10 translate-middle sopping-cart badge rounded-pill bg-danger">
+                                      2
+                                    </span>
+                                    Wishlist
+                                    </a>
+                                </li>
+                                <li class="position-relative ms-2">
+                                    <div class="" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-cart-shopping"></i>
+                                        <span class="position-absolute top-0  translate-middle sopping-cart badge rounded-pill bg-danger">
+                                            0
+                                          </span>
+                                          Add to Cart
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="offcanvas offcanvas-end bg-white" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                  <h5 id="offcanvasRightLabel">YOUR CART</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <p>There are no more items in your cart</p>
+                </div>
+            </div>
+            <div class="offcanvas">
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling"
+                aria-labelledby="offcanvasScrollingLabel">
+                    <div class="offcanvas-header">
+                        <a class="offcanvas-title" id="offcanvasScrollingLabel" href="index.html">
+                            E-Com
+                        </a>
+                        <button type="button" class="btn-close text-reset close-btn" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="mobile-menu">
+                            <div class="wrapper">
+                                <nav class="short-screen">
+                                    <div>
+                                        <ul class="sidebar-nav">
+                                            <li class="sidebar-item active">
+                                                <a class="sidebar-link" href="index.html">Home
+                                                </a>
+                                            </li>
+                                            <li class="sidebar-item has-submenu">
+                                                <a class="sidebar-link d-inline">Shop<i class="fas fa-angle-down text-white mt-1"></i></a>
+                                               <ul>
+                                                    <li><a href="index.html">Dropdown 1</a></li>
+                                                    <li><a href="index.html">Dropdown 2</a></li>
+                                                    <li><a href="index.html">Dropdown 3</a></li>
+                                                    <li><a href="index.html">Dropdown 4</a></li>
+                                               </ul>
+                                            </li>
+                        
+                                            <li class="sidebar-item">
+                                                <a class="sidebar-link" href="#">Blog</a>
+                                            </li>
+                        
+                                            <li class="sidebar-item has-submenu">
+                                                <a class="sidebar-link d-inline">CATAGORY<i class="fas fa-angle-down text-white mt-1"></i></a>
+                                               <ul>
+                                                    <li><a href="index.html">Dropdown 1</a></li>
+                                                    <li><a href="index.html">Dropdown 2</a></li>
+                                                    <li><a href="index.html">Dropdown 3</a></li>
+                                                    <li><a href="index.html">Dropdown 4</a></li>
+                                                    <li><a href="index.html">Dropdown 5</a></li>
+                                                    <li><a href="index.html">Dropdown 6</a></li>
+                                                    <li><a href="index.html">Dropdown 8</a></li>
+                                                    <li><a href="index.html">Dropdown 9</a></li>
+                                                    <li><a href="index.html">Dropdown 10</a></li>
+                                               </ul>
+                                            </li>
+                                            <li class="sidebar-item">
+                                                <a class="sidebar-link" href="#">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModal" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content modal-bg-dark">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                 data-tippy-inertia="true" data-tippy-animation="shift-away"
+                                data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder">
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-search">
+                                <h1 class="searchbox-info">Search Your Product</h1>
+                                <form action="#" class="hm-searchbox bg-dark">
+                                    <input type="text" name="Search ..." value="Search here..."
+                                        onblur="if(this.value==''){this.value='Search...'}"
+                                        onfocus="if(this.value=='Search here...'){this.value=''}" autocomplete="off">
+                                    <button class="search-btn" type="submit" aria-label="searchbtn">
+                                        <i class="pe-7s-search"></i>
+                                    </button>
+                                </form>
+                                <div class="modal-btn d-flex">
+                                    <a href="#">No Thanks</a>
+                                    <a href="#">Enter</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </header>
+       <!-- ==========breadcumb-area========== -->
+        <section>
+            <div class="breadcrumb-area breadcrumb-height">
+                <div class="container-fluid h-100">
+                    <div class="row h-100">
+                        <div class="col-lg-12">
+                            <div class="breadcrumb-item">
+                                <h2 class="breadcrumb-heading">PRODUCT-DETAILS</h2>
+                                <ul>
+                                    <li>
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li><i class="fa fa-angle-right"></i></li>
+                                    <li>Product-details</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==========product-details-area========== -->
+        <section>
+            <div class="product-details-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6">
+                            <div class="product-image-wrapper slider-for">
+                                <div class="products-image">
+                                    <img src="./images/products/17.jpg" alt="Product_Image">
+                                </div>
+                                <div class="products-image">
+                                    <img src="./images/products/03.jpg" alt="Product_Image">
+                                </div>
+                                <div class="products-image">
+                                    <img src="./images/products/06.jpg" alt="Product_Image">
+                                </div>
+                                <div class="products-image">
+                                    <img src="./images/products/09.jpg" alt="Product_Image">
+                                </div>
+                                <div class="products-image">
+                                    <img src="./images/products/12.jpg" alt="Product_Image">
+                                </div>
+                            </div>
+                            <div class="product-btn-image-wrap slider-nav">
+                                <div class="btn-image">
+                                    <img src="./images/products/17.jpg" alt="Product_Image">
+                                </div>
+                                <div class="btn-image">
+                                    <img src="./images/products/03.jpg" alt="Product_Image">
+                                </div>
+                                <div class="btn-image">
+                                    <img src="./images/products/06.jpg" alt="Product_Image">
+                                </div>
+                                <div class="btn-image">
+                                    <img src="./images/products/09.jpg" alt="Product_Image">
+                                </div>
+                                <div class="btn-image">
+                                    <img src="./images/products/12.jpg" alt="Product_Image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6">
+                            <div class="product-details-content">
+                                <div class="product-name">
+                                    <h3>High Resolution Camera</h3>
+                                </div>
+                                <div class="product-rate">
+                                    <b>$99.00</b>
+                                    <span> $170.00</span>
+                                </div>
+                                <div class="product-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>( 1 Review )</span>
+                                </div>
+                                <div class="product-paragraph">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nulla alias iure asperiores, voluptatum rem provident tempore officiis voluptatem ratione autem optio consequuntur nobis sunt sint magni dolor neque libero!</p>
+                                </div>
+                                <div class="product-size-wrapper">
+                                    <div class="tab-content d-flex">
+                                        <strong class="me-3 fs-4 fw-bolder mb-2">Size :</strong>
+                                        <div class="tab-pane fade" id="tab_list_xxl">
+                                            2X-LARGE
+                                        </div>
+                                        <div class="tab-pane fade" id="tab_list_xl">
+                                            X-LARGE
+                                        </div>
+                                        <div class="tab-pane fade" id="tab_list_l">
+                                            LARGE
+                                        </div>
+                                        <div class="tab-pane fade active show" id="tab_list_m">
+                                            MEDIUM
+                                        </div>
+                                        <div class="tab-pane fade" id="tab_list_s">
+                                            SMALL
+                                        </div>
+                                    </div>
+
+                                    <ul class="nav product-size-menu" role="tablist">
+
+                                        <li class="tab__item nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#tab_list_xxl" role="tab" aria-selected="false">XXL</a>
+                                        </li>
+                                        <li class="tab__item nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#tab_list_xl" role="tab" aria-selected="false">XL</a>
+                                        </li>
+                                        <li class="tab__item nav-item ">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#tab_list_l" role="tab" aria-selected="false">L</a>
+                                        </li>
+                                        <li class="tab__item nav-item">
+                                            <a class="nav-link active" data-bs-toggle="tab" href="#tab_list_m" role="tab" aria-selected="false">M</a>
+                                        </li>
+                                        <li class="tab__item nav-item">
+                                            <a class="nav-link " data-bs-toggle="tab" href="#tab_list_s" role="tab" aria-selected="true">S</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="product-size-wrapper">
+                                    <div class="tab-content d-flex">
+                                        <strong class="me-3 fs-5 fw-bolder mb-2">Color :</strong>
+                                        <div class="tab-pane fade" id="tab_list_red">
+                                            <div class="products-colors">
+                                                <div class="div1"></div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade active show" id="tab_list_black">
+                                            <div class="products-colors">
+                                                <div class="div5"></div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="tab_list_green">
+                                            <div class="products-colors">
+                                                <div class="div2"></div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="tab_list_blue">
+                                            <div class="products-colors">
+                                                <div class="div3"></div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="tab_list_white">
+                                            <div class="products-colors">
+                                                <div class="div6"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <ul class="nav product-size-menu" role="tablist">
+                                        <li class="tab__item nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#tab_list_red" role="tab" aria-selected="false">red</a>
+                                        </li>
+                                        <li class="tab__item nav-item">
+                                            <a class="nav-link active" data-bs-toggle="tab" href="#tab_list_black" role="tab" aria-selected="false">black</a>
+                                        </li>
+                                        <li class="tab__item nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#tab_list_green" role="tab" aria-selected="false">green</a>
+                                        </li>
+                                        <li class="tab__item nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#tab_list_white" role="tab" aria-selected="false">white</a>
+                                        </li>
+                                        <li class="tab__item nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#tab_list_blue" role="tab" aria-selected="false">blue</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="counter">
+                                    <strong class="me-3">Quantity</strong>
+                                    <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                                    <input type="text" value="1">
+                                    <span class="up" onClick='increaseCount(event, this)'>+</span>
+                                </div>
+                                <div class="cart-button">
+                                    <a href="cart.html">
+                                        <button class="defult_1 px-5 py-2">ADD TO CART</button>
+                                    </a>
+                                    <a href="wishlist.html">
+                                        <i class="fa-solid fa-heart rounded-1 text-white bg-dark p-2 fs-5 ms-5"></i>
+                                    </a>
+                                </div>
+                                <div class="product-code">
+                                    <div><strong>SKU :</strong> 404</div>
+                                    <div><strong>Categories :</strong> Electronic, Furniture, Clothing</div>
+                                    <div><strong>Tag :</strong> Fashion, Men, Women</div>
+                                </div>
+                                <div class="social-link">
+                                    <strong class="fw-bold me-3">Share on :</strong>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-lg container-fluid  mt-5">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="review-tab-wrapper">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link fw-bolder active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description-tab-pane" type="button" role="tab" aria-controls="description-tab-pane" aria-selected="false">Description</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link fw-bolder" id="review-tab" data-bs-toggle="tab" data-bs-target="#review-tab-pane" type="button" role="tab" aria-controls="review-tab-pane" aria-selected="false">Review</button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="description-tab-pane" role="tabpanel" aria-labelledby="description-tab" tabindex="0">
+                                        <div class="product-description-body">
+                                            <p class="short-desc">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. A quos laboriosam tenetur necessitatibus fugit id officiis explicabo, eveniet reprehenderit quisquam rerum expedita ut inventore odio dolorum odit eligendi excepturi ducimus quidem, voluptas quia soluta vero eius. Cum saepe asperiores odio earum, fugit quod sequi expedita? Commodi, est natus? Accusamus dolorem autem deserunt quos iusto quasi modi quae voluptate adipisci nobis. Deleniti magnam suscipit ab quibusdam amet reiciendis, nam, enim aperiam ipsum adipisci distinctio est doloremque dolores soluta veniam voluptatum nobis a non eaque? Obcaecati itaque ab ipsa autem? Accusamus aliquam at tempora ratione cumque nemo qui debitis earum iusto ab!
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="review-tab-pane" role="tabpanel" aria-labelledby="review-tab" tabindex="0">
+                                        <div class="product-review-body">
+                                            <div class="blog-comment mt-0">
+                                                <h4 class="heading">Customer Reviews (3)</h4>
+                                                <div class="blog-comment-item">
+                                                    <div class="blog-comment-img">
+                                                        <img src="./images/client/1.jpg" alt="User Image">
+                                                    </div>
+                                                    <div class="blog-comment-content">
+                                                        <div class="user-meta">
+                                                            <h3 class="user-name">Adam Taylor</h3>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star-half-full"></i>
+                                                            <span class="date">30 august 2022</span>
+                                                        </div>
+                                                        <p class="user-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore atque perspiciatis placeat iste facere sit quis magnam sunt, libero dolor quis magnam sunt, libero dolor. facere sit quis magnam sunt, libero dolor quis magnam sunt, libero dolor.
+                                                        </p>
+                                                        <a class="comment-btn" href="#">Reply</a>
+                                                    </div>
+                                                </div>
+                                                <div class="blog-comment-item style-2">
+                                                    <div class="blog-comment-img">
+                                                        <img src="./images/client/2.jpg" alt="User Image">
+                                                    </div>
+                                                    <div class="blog-comment-content">
+                                                        <div class="user-meta">
+                                                            <h3 class="user-name">Samantha Smith</h3>
+                                                            <span class="date">20 Jun 2022</span>
+                                                        </div>
+                                                        <p class="user-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore atque perspiciatis placeat iste facere sit quis magnam sunt, libero dolor quis magnam sunt, libero dolor.atque perspiciatis placeat iste facere sit quis magnam sunt, libero dolor quis magnam sunt, libero dolor.
+                                                        </p>
+                                                        <a class="comment-btn bg-danger text-white border-0" href="#">Reply</a>
+                                                    </div>
+                                                </div>
+                                                <div class="blog-comment-item">
+                                                    <div class="blog-comment-img">
+                                                        <img src="./images/client/3.jpg" alt="User Image">
+                                                    </div>
+                                                    <div class="blog-comment-content">
+                                                        <div class="user-meta">
+                                                            <h3 class="user-name">Helena Garcia</h3>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <span class="date">2 march 2022</span>
+                                                        </div>
+                                                        <p class="user-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore atque perspiciatis placeat iste facere sit quis magnam sunt, libero dolor quis magnam sunt, libero dolor. facere sit quis magnam sunt, libero dolor quis magnam sunt, libero dolor.
+                                                        </p>
+                                                        <a class=" comment-btn" href="#">Reply</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="feedback-area">
+                                                <h2 class="heading">Write A Review</h2>
+                                                <form class="feedback-form" action="#">
+                                                    <div class="group-input">
+                                                        <div class="form-field me-3 mb-5 mb-md-0">
+                                                            <input type="text" name="name" placeholder="Your Name*" class="input-field">
+                                                        </div>
+                                                        <div class="form-field">
+                                                            <input type="text" name="email" placeholder="Your Email*" class="input-field">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-field mt-5">
+                                                        <textarea name="message" placeholder="Message" class="textarea-field"></textarea>
+                                                    </div>
+                                                    <div class="button-wrap pt-5">
+                                                        <button type="submit" value="submit" class="defult_1 defult_2" name="submit">Submit Review</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="product-information-body mb-3">
+                                    <h4 class="title">Shipping</h4>
+                                    <p class="short-desc mb-4">The item will be shipped from China. So it need 15-20 days to
+                                        deliver. Our product is good with reasonable price and we believe you will worth it.
+                                        So please wait for it patiently! Thanks.Any question please kindly to contact us and
+                                        we promise to work hard to help you to solve the problem</p>
+                                    <h4 class="title">About return request</h4>
+                                    <p class="short-desc mb-4">If you don't need the item with worry, you can contact us
+                                        then we will help you to solve the problem, so please close the return request!
+                                        Thanks</p>
+                                    <h4 class="title">Guarantee</h4>
+                                    <p class="short-desc mb-0">If it is the quality question, we will resend or refund to
+                                        you; If you receive damaged or wrong items, please contact us and attach some
+                                        pictures about product, we will exchange a new correct item to you after the
+                                        confirmation.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       <!-- ==========footer-area========== -->
+       <footer>
+        <div class="footer-area  bg-dark">
+            <div class="footer-top py-5">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                            <div class="footer-widget-item">
+                                <div class="footer-widget-logo">
+                                    <a class="header-logo" href="index.html">
+                                        E-Com
+                                    </a>
+                                </div>
+                                <div class="with-border">
+                                    <ul>
+                                        <li>
+                                            <a href="#" data-tippy="location" data-tippy-inertia="true"
+                                                data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                data-tippy-arrow="true" data-tippy-theme="sharpborder">
+                                                <i class="fa fa-map-marker"></i>
+                                                <span>184 Main Rd E, Australia</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-tippy="envelope" data-tippy-inertia="true"
+                                                data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                data-tippy-arrow="true" data-tippy-theme="sharpborder">
+                                                <i class="fa fa-envelope-open"></i>
+                                                <span>contact@company.com</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-tippy="Contact" data-tippy-inertia="true"
+                                                data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                data-tippy-arrow="true" data-tippy-theme="sharpborder">
+                                                <i class="fa fa-phone"></i>
+                                                <span> +00 123 456 789</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-tippy="twitter" data-tippy-inertia="true"
+                                                data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                data-tippy-arrow="true" data-tippy-theme="sharpborder">
+                                                <i class="fa-brands fa-twitter"></i>
+                                                <span>E-Com@twitter</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-tippy="instagram" data-tippy-inertia="true"
+                                                data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                data-tippy-arrow="true" data-tippy-theme="sharpborder">
+                                                <i class="fa-brands fa-instagram"></i>
+                                                <span>contact.instagram</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="payment-method">
+                                <a href="#">
+                                    <img src="./images/payment/1.png" alt="Payment Method">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                            <div class="footer-widget-item">
+                                <h3 class="footer-widget-title">Quick links</h3>
+                                <ul class="footer-widget-list-item">
+                                    <li>
+                                        <a href="index.html">Home E-Com</a>
+                                    </li>
+                                    <li>
+                                        <a href="shop.html">shop default</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">FAQ</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Contact</a>
+                                    </li>
+                                    <li>
+                                        <a href="product-details.html">Product Details</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                            <div class="footer-widget-item">
+                                <h3 class="footer-widget-title">Useful links</h3>
+                                <ul class="footer-widget-list-item">
+                                    <li>
+                                        <a href="login-register.html">Sign In</a>
+                                    </li>
+                                    <li>
+                                        <a href="product-review.html">Review</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">My Account</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Contact</a>
+                                    </li>
+                                    <li>
+                                        <a href="payment.html">Payment</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="footer-widget-item">
+                                <h3 class="footer-widget-title">Infomation</h3>
+                                <ul class="footer-widget-list-item">
+                                    <li>
+                                        <a href="shipping.html">Shipping & Delivery</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Privacy Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="shipping.html">Returns</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Returns & Exchanges</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Helps</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <p class="bottom-copyright">@ 2022, <a href="#">E-Com.</a> all right reserved</p>
+                        </div>
+                        <div class="col-lg-6 text-end col-md-6 col-sm-12">
+                            <div class="social-footer-bottom-link">
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </footer>
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/slick.min.js"></script> 
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- <script src="./js/bootstrap.bundle.min.js"></script> -->
+    <script src="./js/script.js"></script>
+</body>
+</html>
