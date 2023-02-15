@@ -193,3 +193,10 @@ function decreaseCount(a, b) {
     input.value = value;
   }
 }
+
+
+// sticky-header
+window.addEventListener('scroll',function(){
+  const header = document.querySelector('header');
+  header.classList.toggle("sticky", window.scrollY > 400);
+});
